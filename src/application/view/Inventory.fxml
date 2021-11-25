@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.InventoryController">
+   <children>
+      <Button fx:id="add" layoutX="53.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="62.0" prefWidth="106.0" text="Add Item">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="642.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#handle" prefHeight="62.0" prefWidth="106.0" text="Log Out">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="53.0" layoutY="207.0" prefHeight="519.0" prefWidth="695.0" />
+      <Label layoutX="263.0" layoutY="73.0" text="Inventory System" underline="true">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
