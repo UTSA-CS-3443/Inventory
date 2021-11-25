@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" layoutX="395.0" layoutY="437.0" stroke="BLACK" strokeType="INSIDE" width="248.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="49.0" layoutX="395.0" layoutY="508.0" stroke="BLACK" strokeType="INSIDE" width="248.0" />
+      <TextField fx:id="usernameField" layoutX="402.0" layoutY="441.0" prefHeight="41.0" prefWidth="235.0" />
+      <TextField fx:id="passwordField" layoutX="402.0" layoutY="512.0" prefHeight="41.0" prefWidth="235.0" />
+      <Label layoutX="243.0" layoutY="441.0" prefHeight="41.0" prefWidth="141.0" text="Username:">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="512.0" prefHeight="41.0" prefWidth="141.0" text="Password:">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginButton" layoutX="402.0" layoutY="647.0" mnemonicParsing="false" onAction="#loginHandle" prefHeight="91.0" prefWidth="141.0" text="Login">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="incorrectLoginLabel" layoutX="243.0" layoutY="349.0" prefHeight="60.0" prefWidth="402.0" textFill="RED">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="60.0" prefHeight="235.0" prefWidth="769.0" text="Welcome to the Inventory System" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
