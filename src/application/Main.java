@@ -1,3 +1,9 @@
+/**
+ * The Main class launches the entire program
+ * 
+ *  *@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ */
+
 package application;
 	
 import javafx.application.Application;
@@ -6,14 +12,11 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
-//@author: Payton Chism (xja124)
-//lab 4
 public class Main extends Application {
 public static Stage stage;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			//loads the main FXML file
 			AnchorPane root = new AnchorPane();
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation( Main.class.getResource("view/Login.fxml") );

@@ -1,3 +1,8 @@
+/**
+ * The LoginController class is responsible for changing the Login view based on the user's inputs
+ * 
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ */
 package application.controller;
 
 import java.io.IOException;
@@ -16,8 +21,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-//controller class for the login Screen
 public class LoginController implements EventHandler<ActionEvent>{
+	
 	@FXML
 	private Button loginButton;
 	@FXML
@@ -29,39 +34,37 @@ public class LoginController implements EventHandler<ActionEvent>{
 	
 	public static User activeUser;
 	
+	/**
+	 * The handle method does nothing
+	 * @param event The press of a button (ActionEvent)
+	 */
 	@Override
-	public void handle(ActionEvent event) {
-
+	public void handle(ActionEvent event) {	
 		
 	}
+	
+	/**
+	 * Changes to the appropriate view based on the user's inputs
+	 * @param event The press of a button (ActionEvent)
+	 * @throws IOException An exception if a file cannot be found
+	 */
 	public void loginHandle(ActionEvent event) throws IOException {
-				
-				//loads the user list
-				ArrayList<User> users = User.loadUsers("data/users.csv");
-				
-				//sets the username and password to variables to be compared
-				String username = usernameField.getText();
-				String password = passwordField.getText();
-				
-				//compares the username and pw to the file
-				activeUser = User.validate(users, username, password);
-				
-				//if there is a match
-				if(activeUser != null) {
-					try {
-					Parent root = FXMLLoader.load(getClass().getResource("../view/Inventory.fxml"));
-					Main.stage.setScene(new Scene(root, 800, 800));
-					Main.stage.show();
-					} catch(Exception e) {
-						e.printStackTrace();
-					}
-				}
-				else {
-					//if the method returns null(if they arent matched)
-					incorrectLoginLabel.setText("Incorrect Login. Please try again.");
-					
-				}
+		ArrayList<User> users = User.loadUsers("data/users.csv");
+		String username = usernameField.getText();
+		String password = passwordField.getText();
+		activeUser = User.validate(users, username, password);
+		if(activeUser != null) {
+			try {
+			Parent root = FXMLLoader.load(getClass().getResource("../view/Inventory.fxml"));
+			Main.stage.setScene(new Scene(root, 800, 800));
+			Main.stage.show();
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		else {
+			incorrectLoginLabel.setText("Incorrect Login. Please try again.");
+		}
 	}
-
-
+	
 }
