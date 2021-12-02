@@ -5,7 +5,7 @@ Repo for team: Try{} Catch() Me If You Can
 An app to view and edit an inventory
 
 ## How to run
-Pull project source code and import the project into eclipse. Right click the project folder and select "Run As" and select "1 Java Application." To log into the app, use username "admin" and password "admin."
+Pull project source code and extract the files. Import the project into eclipse by selecting File>Import. Select General>Existing Projects into Workspace. Making sure "Select root directory" is selected, click browse and go to the project directory. Click finish and the project will be in the Project Explorer. Right click the project folder and select "Run As" and select "1 Java Application." To login to the app, use username "admin" and password "admin."
 
 ## Functionalities
 All functionalities work without breaking.
