@@ -1,7 +1,7 @@
 /**
  * The Item class stores information about an Item and deals with functions pertaining to an Item
  * 
- * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655), Bryan Alvarado (zvy639)
  */
 
 package application.model;
