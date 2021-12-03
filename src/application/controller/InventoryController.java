@@ -1,7 +1,7 @@
 /**
  * The InventoryController class is responsible for updating the Inventory view based on the user's inputs
  * 
- * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655)
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655), Bryan Alvarado (zvy639)
  */
 
 package application.controller;
