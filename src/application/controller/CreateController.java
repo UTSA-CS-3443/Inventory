@@ -1,7 +1,7 @@
 /**
  * The Create Controller class is responsible for updating the create window based on the user's inputs
  * 
- * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Bryan Alvarado (zvy639)
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655), Bryan Alvarado (zvy639)
  */
 
 package application.controller;
