@@ -1,7 +1,7 @@
 /**
  * The DeleteController class is responsible for updating the delete view based on the user's inputs
  * 
- * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Bryan Alvarado (zvy639)
  */
 
 package application.controller;
