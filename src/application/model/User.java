@@ -1,7 +1,7 @@
 /**
  * The user class stores information about a user and deals with functions pertaining to a User object
  * 
- * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ * 	@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655), Bryan Alvarado (zvy639)
  */
 
 package application.model;
