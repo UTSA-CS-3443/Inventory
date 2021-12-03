@@ -81,7 +81,7 @@ public class InventoryController implements EventHandler<Event>, Initializable {
 	}
 
 	/**
-	 * 
+	 * Updates the table displaying the current inventory
 	 * @param location (URL
 	 * @param resources (ResourceBundle)
 	 */
