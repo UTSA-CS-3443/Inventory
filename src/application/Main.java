@@ -1,7 +1,7 @@
 /**
  * The Main class launches the entire program
  * 
- *  *@author Payton Chism (xja124), Beryl Mohanadhas (eaq312)
+ *  *@author Payton Chism (xja124), Beryl Mohanadhas (eaq312), Valeria Villanueva (epi655), Bryan Alvarado (zvy639)
  */
 
 package application;
